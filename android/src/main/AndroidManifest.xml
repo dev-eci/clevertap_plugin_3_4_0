@@ -1,0 +1,3 @@
+<manifest package="com.clevertap.clevertap_plugin">
+    <!-- we need to add package so client can use both AGP 7+ and 8+, can remove when AGP 7 is deprecated !-->
+</manifest>

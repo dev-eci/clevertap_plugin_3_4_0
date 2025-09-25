@@ -1,0 +1,34 @@
+name: clevertap_plugin
+description: The CleverTap Flutter SDK for Mobile Customer Engagement,Analytics and Retention solutions.
+version: 3.4.0
+homepage: https://github.com/CleverTap/clevertap-flutter
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  js: ">=0.6.5"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/clevertap.js
+
+  plugin:
+    platforms:
+      android:
+        package: com.clevertap.clevertap_plugin
+        pluginClass: CleverTapPlugin
+      ios:
+        pluginClass: CleverTapPlugin
+      web:
+        pluginClass: CleverTapPluginWeb
+        fileName: clevertap_plugin_web.dart

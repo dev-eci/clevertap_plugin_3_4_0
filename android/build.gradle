@@ -24,12 +24,22 @@ rootProject.allprojects {
             dirs 'libs'
         }
     }
+    configurations.configureEach {
+        resolutionStrategy {
+            force("androidx.appcompat:appcompat:1.6.1")
+        }
+    }
 }
 
 allprojects {
     repositories {
         google()
         mavenCentral()
+    }
+    configurations.configureEach {
+        resolutionStrategy {
+            force("androidx.appcompat:appcompat:1.6.1")
+        }
     }
 }
 
